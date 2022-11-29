@@ -18,8 +18,8 @@
         <label>
             <input type="text" class="inputField" placeholder="Password" oninput="searchShard(this);" style="margin: 0 auto;"/>
         </label>
-        <h3 class="titleBox" style="margin: 30px auto 0; height: 50px;" onclick="login();">
-            <span>LOGIN</span>
+        <h3 class="titleBox" style="align-items: center; margin: 30px auto 0; height: 50px;" onclick="login();">
+            LOGIN
         </h3>
     </div>
 
