@@ -7,9 +7,7 @@ function allChildrenHeight(elm) {
     for (let i = 0; i < childrenSize; i++) {
         finalSize += children[i].offsetHeight;
         finalSize += parseInt(getComputedStyle(children[i]).marginTop);
-        // console.log(children[i]);
     }
-    // console.log(finalSize);
     return finalSize;
 }
 
@@ -27,25 +25,10 @@ function toggleList(header) {
     }
 }
 
-// function showTextArticles(arrNum, selected) {
-//     var tabList = document.querySelectorAll('.titleBox');
-//     tabList.forEach(function(tab) {tab.className = "titleBox"});
-//
-//     selected.className = "selected titleBox";
-//     textBody.innerHTML = articlesArray[arrNum][1];
-//
-//     if (articlesArray[arrNum][3] == undefined || articlesArray[arrNum][3] == null || articlesArray[arrNum][3] == "") {
-//         hrLine.style.marginTop = "100px";
-//     } else {
-//         hrLine.style.marginTop = "0px";
-//     }
-//     window.history.replaceState(null, '', "#Articles_"+arrNum);
-// }
-
 function showTextArticles(articleText, selected) {
     const tabList = document.querySelectorAll('.titleBox');
     tabList.forEach(function(tab) {tab.className = "titleBox"});
     selected.className = "selected titleBox";
     textBody.innerHTML = articleText;
-    window.history.replaceState(null, '', "#Articles_"+arrNum);
+    // window.history.replaceState(null, '', "#Articles_"+arrNum);
 }

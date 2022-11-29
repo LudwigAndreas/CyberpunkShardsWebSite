@@ -2,12 +2,15 @@ package ru.kpfu.itis.controllers;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class ShardTextServlet extends HttpServlet {
+@WebServlet("/signin")
+public class SignInPageServlet extends HttpServlet {
+
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
@@ -15,6 +18,11 @@ public class ShardTextServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        getServletContext().getRequestDispatcher("/WEB-INF/view/security/signin.jsp").forward(req, resp);
+    }
 
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        super.doPost(req, resp);
     }
 }
