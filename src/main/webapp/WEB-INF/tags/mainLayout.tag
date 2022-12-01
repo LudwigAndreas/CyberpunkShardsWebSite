@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/style/cyberpunk.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/style/glitch.css">
     <script src="${pageContext.request.contextPath}/assets/js/cyberpunk_shards.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <%--    <script src="assets/js/shardsdb.js" defer></script>--%>
 <%--    <script src="assets/js/shard_search.js" defer></script>--%>
 </head>
