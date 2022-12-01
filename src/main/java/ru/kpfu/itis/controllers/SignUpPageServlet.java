@@ -8,19 +8,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("")
-public class HomePageServlet extends HttpServlet {
-    private String name;
+@WebServlet("/signup")
+public class SignUpPageServlet extends HttpServlet {
 
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-        name = (String) getServletContext().getAttribute("name");
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("name", name);
-        resp.sendRedirect(getServletContext().getContextPath() + "/database");
+        getServletContext().getRequestDispatcher("/WEB-INF/view/security/signup.jsp").forward(req, resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        super.doPost(req, resp);
     }
 }
