@@ -5,12 +5,9 @@ This project is a web application that allows users to read in-game notes and bo
 ## Table of Contents
 
 - [About](#about)
-   - [Features](#features)
 - [Getting Started](#getting-started)
    - [Prerequisites](#prerequisites)
    - [Installing](#installing)
-- [Running the tests](#running-the-tests)
-- [Usage](#usage)
 - [Built Using](#built-using)
 - [Authors](#authors)
 - [Acknowledgements](#acknowledgements)
